@@ -3,8 +3,10 @@ plugins {
 }
 
 group 'org.machines0008'
-version '1.0-SNAPSHOT'
 
+def versionCode = 1
+def versionName = 1
+version = "${versionName}.${versionCode}"
 repositories {
     mavenCentral()
 }

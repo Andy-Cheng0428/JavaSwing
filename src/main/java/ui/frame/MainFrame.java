@@ -1,7 +1,7 @@
 package ui.frame;
 
 import ui.frame.widget.GeneralItem;
-import ui.frame.widget.component.GeneralPanel;
+import ui.frame.widget.component.GeneralHorizontalPanel;
 import ui.frame.widget.component.MyButton;
 import ui.frame.widget.component.MyLabel;
 import ui.frame.widget.component.MyTextArea;
@@ -28,7 +28,7 @@ public class MainFrame extends BaseFrame {
         textItem.addComponent(new MyLabel("File"));
         textItem.addComponent(new MyButton("My Test Button"));
         textItem.addComponent(new MyTextArea());
-        GeneralPanel panel = new GeneralPanel.Builder().add(new MyLabel("賢福竟剛剛毒發")).add(new MyLabel("File")).add(new MyButton("My Test Button")).add(new MyTextArea()).setSize(getWidth(),  getHeight()).build();
+        GeneralHorizontalPanel panel = new GeneralHorizontalPanel.Builder().add(new MyLabel("賢福竟剛剛毒發")).add(new MyLabel("File")).add(new MyButton("My Test Button")).add(new MyTextArea()).setSize(getWidth(),  getHeight()).build();
         setContentPane(panel);
 
 
